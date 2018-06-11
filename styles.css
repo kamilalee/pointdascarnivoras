@@ -15,6 +15,7 @@ header h1 {
 }
 header div {
     display:flex;
+    align-content: center;
     align-items:center;
 }
 header input {
@@ -23,17 +24,49 @@ header input {
     width: 250px;
     border-radius: 10px;
     display: none;
+    font-size:18px;
+    padding-left:1px;
 }
 
 header img {
     width: 30px;
 }
 
+.principal > div:nth-child(1){
+    width:100%
+}
+
+.principal > div:nth-child(1) > img {
+    width:100%
+}
+.principal > div:nth-child(2){
+    width:100%
+}
+
+.principal .destaque img{
+    width:100%;
+}
+
 @media(min-width: 768px) {
     header input{
         display:block;
     }
-}
-header img {
-    margin-left: -40px
+    header img {
+    padding: 15px;
+    background-color: #ddd;
+    border-radius: 100%;
+    margin-left:-40px;
+    }
+
+    .principal{
+    display:flex;
+    }
+
+    .principal >div:nth-child(1){
+    width:70%
+    }
+
+    .principal >div:nth-child(2){
+    width:30%
+    }
 }
